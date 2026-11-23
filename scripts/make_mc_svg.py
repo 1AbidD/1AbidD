@@ -176,7 +176,7 @@ def load_avatar_png(username: str, skin_path: Path | None) -> tuple[bytes, str]:
     return build_placeholder_png(), "SKIN PLACEHOLDER // CHANGE_ME"
 
 
-def build_mc_svg(png_bytes: bytes, status_label: str) -> str:
+def build_mc_svg(png_bytes: bytes, status_label: str, pixelated: bool = False) -> str:
     b64 = base64.b64encode(png_bytes).decode("ascii")
     data_uri = f"data:image/png;base64,{b64}"
     safe_label = (
@@ -184,7 +184,8 @@ def build_mc_svg(png_bytes: bytes, status_label: str) -> str:
         .replace("<", "&lt;")
         .replace(">", "&gt;")
     )
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 290" width="240" height="290" role="img" aria-label="Floating Minecraft character avatar">
+    img_style = ' style="image-rendering:pixelated"' if pixelated else ""
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 290" width="240" height="290" role="img" aria-label="Floating Minecraft character avatar">
   <defs>
     <linearGradient id="mcBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#060914"/>
@@ -256,7 +257,7 @@ def build_mc_svg(png_bytes: bytes, status_label: str) -> str:
     <rect class="p6" x="136" y="250" width="4" height="4" fill="#7c3aed"/>
 
     <g class="mc-float">
-      <image x="66" y="42" width="108" height="196" preserveAspectRatio="xMidYMid meet" style="image-rendering:pixelated" href="{data_uri}" xlink:href="{data_uri}"/>
+      <image x="66" y="42" width="108" height="196" preserveAspectRatio="xMidYMid meet"{img_style} href="{data_uri}"/>
     </g>
 
     <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="9.5" letter-spacing="1">
@@ -282,7 +283,7 @@ def main() -> None:
     args = parser.parse_args()
 
     png_bytes, status_label = load_avatar_png(args.username, args.skin)
-    svg = build_mc_svg(png_bytes, status_label)
+    svg = build_mc_svg(png_bytes, status_label, pixelated=status_label.startswith("SKIN"))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(svg, encoding="utf-8")
     print(f"Wrote {args.output} ({len(svg.encode('utf-8'))} bytes) [{status_label}]")
