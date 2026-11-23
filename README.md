@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/typing.svg" width="880" height="50" alt="Informatics Engineering Student | Data Science / BI Developer | Aspiring Writer-Director" />
+  <img src="assets/typing.svg?v=2" width="880" height="50" alt="Informatics Engineering Student | Data Science / BI Developer" />
 </p>
 
 <table>
@@ -18,7 +18,7 @@
         Di GitHub ini isinya campuran project Python, aplikasi mobile Flutter, eksperimen AI lokal, sampai tugas kuliah yang sekalian gua rapihin.
       </p>
       <p>
-        Terbuka buat ngobrol soal data, bikin aplikasi kecil-kecilan, atau kolaborasi kreatif.
+        Terbuka buat ngobrol soal data, bikin aplikasi kecil-kecilan, atau ngulik project bareng.
       </p>
     </td>
   </tr>
@@ -71,21 +71,11 @@
   <img src="assets/divider.svg?v=2" width="880" height="24" alt="" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/1AbidD">
-    <img src="https://img.shields.io/badge/GitHub-1AbidD-0b0f1e?style=for-the-badge&amp;logo=github&amp;logoColor=f8fafc&amp;labelColor=7c3aed" height="28" alt="GitHub profile 1AbidD" />
-  </a>
-  <!-- TODO: Replace with your real Instagram link and remove the placeholder badge -->
-  <img src="https://img.shields.io/badge/Instagram-TODO_ADD_HANDLE-0b0f1e?style=for-the-badge&amp;logo=instagram&amp;logoColor=c4b5fd&amp;labelColor=3b1d6e" height="28" alt="Instagram placeholder TODO" />
-  <!-- TODO: Replace with your real mailto: address and remove the placeholder badge -->
-  <img src="https://img.shields.io/badge/Email-TODO_ADD_EMAIL-0b0f1e?style=for-the-badge&amp;logo=gmail&amp;logoColor=c4b5fd&amp;labelColor=3b1d6e" height="28" alt="Email placeholder TODO" />
-</p>
-
 <details>
   <summary>Profile maintenance notes</summary>
   <p>
     Tech stack and featured projects sync daily via <code>.github/workflows/update-stack.yml</code> using <code>scripts/gen_stack.py</code>.
     The contribution snake updates daily via <code>.github/workflows/snake.yml</code>.
-    To swap the Minecraft placeholder avatar, set <code>MC_USERNAME</code> in <code>scripts/make_mc_svg.py</code> or place a local <code>skin.png</code> in the repo root and run <code>python scripts/make_mc_svg.py</code>.
+    To swap the Minecraft avatar, update <code>MC_USERNAME</code> in <code>scripts/make_mc_svg.py</code> or place a local <code>skin.png</code> in the repo root and run <code>python scripts/make_mc_svg.py</code>.
   </p>
 </details>
