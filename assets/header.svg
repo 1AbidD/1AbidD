@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="880" height="220" role="img" aria-label="Abid deep-space mission control banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070f"/>
+      <stop offset="55%" stop-color="#0b0f21"/>
+      <stop offset="100%" stop-color="#110c24"/>
+    </linearGradient>
+    <radialGradient id="nebulaA" cx="74%" cy="52%" r="42%">
+      <stop offset="0%" stop-color="#a020f0" stop-opacity="0.34"/>
+      <stop offset="48%" stop-color="#7c3aed" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#05070f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaB" cx="22%" cy="28%" r="36%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#4c1d95" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#05070f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="diskGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.15"/>
+      <stop offset="28%" stop-color="#a020f0" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#f5d0fe" stop-opacity="1"/>
+      <stop offset="72%" stop-color="#7c3aed" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a020f0" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="planetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="60%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d1c"/>
+    </linearGradient>
+    <filter id="titleGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="diskGlow" x="-30%" y="-50%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="hudClip">
+      <polygon points="18,4 862,4 876,18 876,202 862,216 18,216 4,202 4,18"/>
+    </clipPath>
+  </defs>
+  <style>
+    .twinkle-a { animation: twinkle 3.6s ease-in-out infinite; }
+    .twinkle-b { animation: twinkle 5.1s ease-in-out 1.4s infinite; }
+    .twinkle-c { animation: twinkle 4.2s ease-in-out 0.7s infinite; }
+    .asteroid { animation: drift 16s linear infinite; }
+    .disk-pulse { animation: diskPulse 5.5s ease-in-out infinite; }
+    .station { animation: stationFloat 7s ease-in-out infinite; }
+    .px-float { animation: pxDrift 6s ease-in-out infinite; }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.28; }
+      50% { opacity: 1; }
+    }
+    @keyframes drift {
+      0% { transform: translate(-40px, 14px) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.9; }
+      90% { opacity: 0.9; }
+      100% { transform: translate(310px, -36px) rotate(42deg); opacity: 0; }
+    }
+    @keyframes diskPulse {
+      0%, 100% { opacity: 0.84; }
+      50% { opacity: 1; }
+    }
+    @keyframes stationFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes pxDrift {
+      0%, 100% { transform: translateY(0px); opacity: 0.5; }
+      50% { transform: translateY(-6px); opacity: 0.95; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .twinkle-a, .twinkle-b, .twinkle-c, .asteroid, .disk-pulse, .station, .px-float { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#hudClip)">
+    <rect width="880" height="220" fill="url(#bgGrad)"/>
+    <rect width="880" height="220" fill="url(#nebulaA)"/>
+    <rect width="880" height="220" fill="url(#nebulaB)"/>
+
+    <!-- Starfield and subtle pixel dust -->
+    <g fill="#f8fafc">
+      <circle cx="48" cy="42" r="1.2" class="twinkle-a"/>
+      <circle cx="118" cy="28" r="1" opacity="0.6"/>
+      <circle cx="192" cy="54" r="1.4" class="twinkle-b"/>
+      <circle cx="268" cy="24" r="1" class="twinkle-c"/>
+      <circle cx="342" cy="48" r="1.3" class="twinkle-a"/>
+      <circle cx="418" cy="22" r="1.1" opacity="0.7"/>
+      <circle cx="496" cy="52" r="1.5" class="twinkle-b"/>
+      <circle cx="566" cy="30" r="1.1" class="twinkle-c"/>
+      <circle cx="788" cy="34" r="1.4" class="twinkle-a"/>
+      <circle cx="836" cy="68" r="1.1" opacity="0.65"/>
+      <circle cx="822" cy="176" r="1.3" class="twinkle-b"/>
+      <circle cx="512" cy="186" r="1.2" class="twinkle-c"/>
+      <circle cx="388" cy="178" r="1" opacity="0.55"/>
+      <circle cx="242" cy="192" r="1.4" class="twinkle-a"/>
+      <circle cx="96" cy="184" r="1.1" class="twinkle-b"/>
+    </g>
+    <g class="px-float">
+      <rect x="312" y="76" width="3" height="3" fill="#c084fc"/>
+      <rect x="466" y="142" width="3" height="3" fill="#22d3ee"/>
+      <rect x="534" y="64" width="4" height="4" fill="#7c3aed"/>
+      <rect x="774" y="152" width="3" height="3" fill="#a020f0"/>
+      <rect x="164" y="168" width="3" height="3" fill="#22d3ee"/>
+    </g>
+
+    <!-- Distant ringed planet -->
+    <g opacity="0.78">
+      <circle cx="432" cy="72" r="18" fill="url(#planetGrad)" stroke="#4c1d95" stroke-width="0.9"/>
+      <ellipse cx="432" cy="73" rx="34" ry="7" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.55" transform="rotate(-14 432 73)"/>
+    </g>
+
+    <!-- Space station silhouette -->
+    <g class="station" transform="translate(768, 42)" opacity="0.88">
+      <rect x="0" y="9" width="44" height="3" fill="#94a3b8"/>
+      <rect x="17" y="4" width="10" height="13" rx="1.5" fill="#cbd5e1"/>
+      <rect x="4" y="1" width="7" height="19" fill="#38bdf8" opacity="0.65"/>
+      <rect x="33" y="1" width="7" height="19" fill="#38bdf8" opacity="0.65"/>
+      <rect x="20" y="8" width="4" height="4" fill="#a020f0"/>
+    </g>
+
+    <!-- Black hole and glowing accretion disk -->
+    <g transform="translate(658, 114)">
+      <ellipse cx="0" cy="0" rx="112" ry="26" fill="none" stroke="#7c3aed" stroke-width="10" opacity="0.22" transform="rotate(-12)" filter="url(#diskGlow)"/>
+      <path d="M -112,0 A 112,26 0 0,1 112,0" fill="none" stroke="url(#diskGrad)" stroke-width="5.5" transform="rotate(-12)" class="disk-pulse" filter="url(#diskGlow)"/>
+      <circle cx="0" cy="0" r="39" fill="none" stroke="#c084fc" stroke-width="1.8" opacity="0.55" filter="url(#diskGlow)"/>
+      <circle cx="0" cy="0" r="34" fill="#03040a" stroke="#a020f0" stroke-width="1.6"/>
+      <circle cx="0" cy="0" r="29" fill="#020308"/>
+      <path d="M -116,0 A 116,27 0 0,0 116,0" fill="none" stroke="url(#diskGrad)" stroke-width="6.5" transform="rotate(-12)" class="disk-pulse" filter="url(#diskGlow)"/>
+      <path d="M -94,2 A 94,20 0 0,0 94,2" fill="none" stroke="#f8fafc" stroke-width="1.3" opacity="0.82" transform="rotate(-12)"/>
+    </g>
+
+    <!-- Drifting asteroid -->
+    <g class="asteroid" transform="translate(260, 148)">
+      <polygon points="0,8 8,0 20,2 25,11 18,20 6,19" fill="#334155" stroke="#64748b" stroke-width="1"/>
+      <polygon points="6,6 11,4 13,9 8,11" fill="#1e293b"/>
+      <circle cx="17" cy="13" r="2" fill="#1e293b"/>
+    </g>
+
+    <!-- HUD telemetry header and title block -->
+    <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8" letter-spacing="1.4">
+      <text x="40" y="34">ORBITAL STATION // 1ABIDD</text>
+      <text x="692" y="198" fill="#67e8f9" opacity="0.85">COORD 06.2S 106.8E</text>
+    </g>
+    <line x1="40" y1="43" x2="292" y2="43" stroke="#7c3aed" stroke-width="1" opacity="0.65"/>
+    <rect x="296" y="40" width="6" height="6" fill="#22d3ee"/>
+
+    <text x="40" y="124" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="60" font-weight="800" fill="#a020f0" opacity="0.5" filter="url(#titleGlow)" letter-spacing="2">Abid</text>
+    <text x="40" y="124" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="60" font-weight="800" fill="#f8fafc" letter-spacing="2">Abid</text>
+
+    <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="13.5" fill="#cbd5e1">
+      <text x="42" y="156">abdzki  <tspan fill="#7c3aed">//</tspan>  <tspan fill="#c4b5fd">@1AbidD</tspan></text>
+    </g>
+    <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8">
+      <rect x="42" y="176" width="6" height="6" fill="#a020f0"/>
+      <rect x="52" y="176" width="6" height="6" fill="#7c3aed"/>
+      <rect x="62" y="176" width="6" height="6" fill="#22d3ee"/>
+      <text x="78" y="183" letter-spacing="1">MISSION CONTROL PROFILE</text>
+    </g>
+  </g>
+
+  <!-- Cut-corner HUD frame and corner brackets -->
+  <polygon points="18,4 862,4 876,18 876,202 862,216 18,216 4,202 4,18" fill="none" stroke="url(#frameGrad)" stroke-width="1.5"/>
+  <polyline points="4,40 4,18 18,4 46,4" fill="none" stroke="#22d3ee" stroke-width="2.2"/>
+  <polyline points="834,4 862,4 876,18 876,40" fill="none" stroke="#a020f0" stroke-width="2.2"/>
+  <polyline points="4,180 4,202 18,216 46,216" fill="none" stroke="#a020f0" stroke-width="2.2"/>
+  <polyline points="834,216 862,216 876,202 876,180" fill="none" stroke="#22d3ee" stroke-width="2.2"/>
+</svg>

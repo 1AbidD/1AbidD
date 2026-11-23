@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 356" width="880" height="356" role="img" aria-label="Auto-synced GitHub tech stack for 1AbidD">
+  <defs>
+    <linearGradient id="tsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914"/>
+      <stop offset="100%" stop-color="#0f1229"/>
+    </linearGradient>
+    <linearGradient id="tsBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a020f0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .bar {
+      transform-box: fill-box;
+      transform-origin: left center;
+      animation: grow 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    @keyframes grow {
+      from { transform: scaleX(0); opacity: 0.4; }
+      to { transform: scaleX(1); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bar { animation: none; }
+    }
+  </style>
+
+  <polygon points="16,4 864,4 876,16 876,340 864,352 16,352 4,340 4,16" fill="url(#tsBg)" stroke="url(#tsBorder)" stroke-width="1.4"/>
+  <polyline points="4,36 4,16 16,4 42,4" fill="none" stroke="#22d3ee" stroke-width="2"/>
+  <polyline points="838,352 864,352 876,340 876,320" fill="none" stroke="#a020f0" stroke-width="2"/>
+
+  <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <rect x="34" y="24" width="6" height="6" fill="#a020f0"/>
+    <text x="48" y="31" font-size="12" font-weight="700" fill="#c4b5fd" letter-spacing="1.2">TELEMETRY // LANGUAGE DISTRIBUTION</text>
+    <text x="846" y="31" text-anchor="end" font-size="10.5" fill="#94a3b8">6 PUBLIC REPOS (NO FORKS) | SYNC 2026-11-23</text>
+    <line x1="34" y1="44" x2="846" y2="44" stroke="#312e81" stroke-width="1"/>
+  </g>
+
+  <g>
+    <text x="34" y="79" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12.5" font-weight="600" fill="#e2e8f0">Python</text>
+    <rect x="196" y="68" width="576" height="12" rx="2" fill="#11172e" stroke="#2e1f5e" stroke-width="1"/>
+    <rect class="bar" x="196" y="68" width="380.9" height="12" rx="2" fill="#a855f7" style="animation-delay:0.0s"/>
+    <text x="846" y="79" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#cbd5e1">66.1%</text>
+    <text x="34" y="113" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12.5" font-weight="600" fill="#e2e8f0">Dart</text>
+    <rect x="196" y="102" width="576" height="12" rx="2" fill="#11172e" stroke="#2e1f5e" stroke-width="1"/>
+    <rect class="bar" x="196" y="102" width="164.7" height="12" rx="2" fill="#22d3ee" style="animation-delay:0.12s"/>
+    <text x="846" y="113" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#cbd5e1">28.6%</text>
+    <text x="34" y="147" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12.5" font-weight="600" fill="#e2e8f0">C++</text>
+    <rect x="196" y="136" width="576" height="12" rx="2" fill="#11172e" stroke="#2e1f5e" stroke-width="1"/>
+    <rect class="bar" x="196" y="136" width="13.4" height="12" rx="2" fill="#ec4899" style="animation-delay:0.24s"/>
+    <text x="846" y="147" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#cbd5e1">2.3%</text>
+    <text x="34" y="181" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12.5" font-weight="600" fill="#e2e8f0">CMake</text>
+    <rect x="196" y="170" width="576" height="12" rx="2" fill="#11172e" stroke="#2e1f5e" stroke-width="1"/>
+    <rect class="bar" x="196" y="170" width="8.5" height="12" rx="2" fill="#818cf8" style="animation-delay:0.36s"/>
+    <text x="846" y="181" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#cbd5e1">1.5%</text>
+    <text x="34" y="215" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12.5" font-weight="600" fill="#e2e8f0">HTML</text>
+    <rect x="196" y="204" width="576" height="12" rx="2" fill="#11172e" stroke="#2e1f5e" stroke-width="1"/>
+    <rect class="bar" x="196" y="204" width="8.0" height="12" rx="2" fill="#f97316" style="animation-delay:0.48s"/>
+    <text x="846" y="215" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#cbd5e1">1.0%</text>
+  </g>
+
+  <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <line x1="34" y1="238" x2="846" y2="238" stroke="#312e81" stroke-width="1"/>
+    <text x="34" y="256" font-size="11" font-weight="700" fill="#67e8f9" letter-spacing="1">DETECTED FRAMEWORKS &amp; TOOLING (FROM REPO FILES)</text>
+  </g>
+
+  <g>
+    <polygon points="40,270 108,270 108,290 102,296 34,296 34,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="42" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="53" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">SQLite</text>
+    <polygon points="124,270 192,270 192,290 186,296 118,296 118,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="126" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="137" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Python</text>
+    <polygon points="208,270 292,270 292,290 286,296 202,296 202,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="210" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="221" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Pydantic</text>
+    <polygon points="308,270 424,270 424,290 418,296 302,296 302,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="310" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="321" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Hugging Face</text>
+    <polygon points="440,270 516,270 516,290 510,296 434,296 434,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="442" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="453" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Flutter</text>
+    <polygon points="532,270 598,270 598,290 592,296 526,296 526,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="534" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="545" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Dart</text>
+    <polygon points="614,270 698,270 698,290 692,296 608,296 608,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="616" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="627" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Firebase</text>
+    <polygon points="714,270 782,270 782,290 776,296 708,296 708,276" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="716" y="280" width="5" height="5" fill="#22d3ee"/>
+    <text x="727" y="287" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Docker</text>
+    <polygon points="40,304 106,304 106,324 100,330 34,330 34,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="42" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="53" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Flask</text>
+    <polygon points="122,304 188,304 188,324 182,330 116,330 116,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="124" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="135" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">HTML</text>
+    <polygon points="204,304 272,304 272,324 266,330 198,330 198,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="206" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="217" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Pandas</text>
+    <polygon points="288,304 356,304 356,324 350,330 282,330 282,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="290" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="301" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Gradio</text>
+    <polygon points="372,304 438,304 438,324 432,330 366,330 366,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="374" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="385" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">CMake</text>
+    <polygon points="454,304 520,304 520,324 514,330 448,330 448,310" fill="#10162c" stroke="#7c3aed" stroke-width="1"/>
+    <rect x="456" y="314" width="5" height="5" fill="#22d3ee"/>
+    <text x="467" y="321" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">C++</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 24" width="880" height="24" role="img" aria-label="Glowing space divider">
+  <defs>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#7c3aed" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#a020f0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a020f0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="beamGlow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .spark { animation: sweep 5.5s ease-in-out infinite; }
+    @keyframes sweep {
+      0%, 100% { transform: translateX(0px); opacity: 0.4; }
+      50% { transform: translateX(220px); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .spark { animation: none; }
+    }
+  </style>
+  <line x1="20" y1="12" x2="860" y2="12" stroke="url(#beam)" stroke-width="2" filter="url(#beamGlow)"/>
+  <polygon points="440,5 449,12 440,19 431,12" fill="#0b0f21" stroke="#c084fc" stroke-width="1.5"/>
+  <rect x="438" y="10" width="4" height="4" fill="#22d3ee"/>
+  <rect class="spark" x="328" y="10" width="4" height="4" fill="#e9d5ff"/>
+</svg>

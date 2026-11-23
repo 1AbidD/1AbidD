@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 290" width="240" height="290" role="img" aria-label="Floating Minecraft character avatar">
+  <defs>
+    <linearGradient id="mcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914"/>
+      <stop offset="100%" stop-color="#110d26"/>
+    </linearGradient>
+    <radialGradient id="mcAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a020f0" stop-opacity="0.48"/>
+      <stop offset="55%" stop-color="#7c3aed" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#060914" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mcBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a020f0" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="mcClip">
+      <polygon points="16,4 224,4 236,16 236,274 224,286 16,286 4,274 4,16"/>
+    </clipPath>
+  </defs>
+  <style>
+    .mc-float { animation: mcFloat 4.2s ease-in-out infinite; }
+    .mc-aura { animation: auraPulse 3.8s ease-in-out infinite; transform-origin: 120px 148px; }
+    .mc-shadow { animation: shadowPulse 4.2s ease-in-out infinite; transform-origin: 120px 242px; }
+    .p1 { animation: rise 3.4s linear infinite; }
+    .p2 { animation: rise 4.1s linear 0.8s infinite; }
+    .p3 { animation: rise 3.7s linear 1.6s infinite; }
+    .p4 { animation: rise 4.5s linear 2.2s infinite; }
+    .p5 { animation: rise 3.2s linear 0.4s infinite; }
+    .p6 { animation: rise 4.8s linear 1.2s infinite; }
+    @keyframes mcFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes auraPulse {
+      0%, 100% { opacity: 0.65; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.07); }
+    }
+    @keyframes shadowPulse {
+      0%, 100% { opacity: 0.55; transform: scaleX(1); }
+      50% { opacity: 0.28; transform: scaleX(0.78); }
+    }
+    @keyframes rise {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.95; }
+      80% { opacity: 0.7; }
+      100% { transform: translateY(-170px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .mc-float, .mc-aura, .mc-shadow, .p1, .p2, .p3, .p4, .p5, .p6 { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#mcClip)">
+    <rect width="240" height="290" fill="url(#mcBg)"/>
+    <circle cx="34" cy="48" r="1.1" fill="#e2e8f0" opacity="0.65"/>
+    <circle cx="204" cy="64" r="1.2" fill="#e2e8f0" opacity="0.55"/>
+    <circle cx="52" cy="222" r="1" fill="#cbd5e1" opacity="0.5"/>
+    <circle cx="196" cy="214" r="1.1" fill="#cbd5e1" opacity="0.6"/>
+
+    <ellipse class="mc-aura" cx="120" cy="148" rx="84" ry="88" fill="url(#mcAura)"/>
+    <ellipse class="mc-shadow" cx="120" cy="242" rx="44" ry="9" fill="#a020f0" opacity="0.38"/>
+
+    <!-- Rising pixel particles -->
+    <rect class="p1" x="48" y="236" width="5" height="5" fill="#c084fc"/>
+    <rect class="p2" x="78" y="248" width="4" height="4" fill="#a020f0"/>
+    <rect class="p3" x="156" y="242" width="5" height="5" fill="#22d3ee"/>
+    <rect class="p4" x="184" y="234" width="4" height="4" fill="#c084fc"/>
+    <rect class="p5" x="108" y="252" width="3" height="3" fill="#e9d5ff"/>
+    <rect class="p6" x="136" y="250" width="4" height="4" fill="#7c3aed"/>
+
+    <g class="mc-float">
+      <image x="66" y="42" width="108" height="196" preserveAspectRatio="xMidYMid meet" style="image-rendering:pixelated" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAEACAYAAAB7+X6nAAADNklEQVR42u3dMQrCMBQG4F7BxUGoiKMuzj2Ds6fxGt29k+dQdHBw0lUQeUKsaZsv8K9pCN/0eM2rqsxrNm8eJacqfQEAAAAAAAAAAAAAAAAAAAAAwEtWm92gAwAAAAAAAAAAAAAAAAAAAAAAAPwOwPV273UAAAAAAAAAAAAAAAAAAAAAAACA3wE4LC69DgAAAAAAAAAAAAAAAAAAAAAAAPA/AMvjOSkAAAAAAAAAAAAAAAAAAAAAAACAQhAAAAAAAAAAAAAAAAAAAAAAAADggQgPRAAAAAAAAAAAAAAAAAAAAAAAgIERAAAAAAAAAAAAAAAAAAAAAADQBwD75vSQcgMAAC4BAAFAABAABAAB4DW5GyYm0/Wgk7vhBQAAAAAAAAAAAAAAAAAAAAAAxgQgGtyYWiiJ9gcAAAAAAAAAAAAAAAAAAAAAAAD+ByA6f+rAiGh/AAAAAAAAAAAAAAAAAAAAAAAAoD8Aug4AAAAAAAAAAAAAAAAAAAAAAIwJwLZuO03pP4Z0fb8AAAAAAAAAAAAAAAAAAAAAADAkAGMfHAkAAAAAAAAAAAAAAAAAAAAAAAAoBAEAAAAAAAAAAAAAAAAAAAAAgEKQQhAAAAAAAAAAAAAAAAAAAAAAAHQJwOBIgyMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYHoDcK7qgsacqfQEAAAAAAAAAAAAAAAAAAAAAQEE/hgAAAAAAAAAAAAAAAAAAAAAAAADfA4gaMlLPF+0PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHxO9NBhbgDR+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFACgG3dJiX1fKnfBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3hM1ZORuCIkCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABnWE3Kbfl63kOO5AAAAAElFTkSuQmCC" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAEACAYAAAB7+X6nAAADNklEQVR42u3dMQrCMBQG4F7BxUGoiKMuzj2Ds6fxGt29k+dQdHBw0lUQeUKsaZsv8K9pCN/0eM2rqsxrNm8eJacqfQEAAAAAAAAAAAAAAAAAAAAAwEtWm92gAwAAAAAAAAAAAAAAAAAAAAAAAPwOwPV273UAAAAAAAAAAAAAAAAAAAAAAACA3wE4LC69DgAAAAAAAAAAAAAAAAAAAAAAAPA/AMvjOSkAAAAAAAAAAAAAAAAAAAAAAACAQhAAAAAAAAAAAAAAAAAAAAAAAADggQgPRAAAAAAAAAAAAAAAAAAAAAAAgIERAAAAAAAAAAAAAAAAAAAAAADQBwD75vSQcgMAAC4BAAFAABAABAAB4DW5GyYm0/Wgk7vhBQAAAAAAAAAAAAAAAAAAAAAAxgQgGtyYWiiJ9gcAAAAAAAAAAAAAAAAAAAAAAAD+ByA6f+rAiGh/AAAAAAAAAAAAAAAAAAAAAAAAoD8Aug4AAAAAAAAAAAAAAAAAAAAAAIwJwLZuO03pP4Z0fb8AAAAAAAAAAAAAAAAAAAAAADAkAGMfHAkAAAAAAAAAAAAAAAAAAAAAAAAoBAEAAAAAAAAAAAAAAAAAAAAAgEKQQhAAAAAAAAAAAAAAAAAAAAAAAHQJwOBIgyMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYHoDcK7qgsacqfQEAAAAAAAAAAAAAAAAAAAAAQEE/hgAAAAAAAAAAAAAAAAAAAAAAAADfA4gaMlLPF+0PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHxO9NBhbgDR+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFACgG3dJiX1fKnfBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3hM1ZORuCIkCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABnWE3Kbfl63kOO5AAAAAElFTkSuQmCC"/>
+    </g>
+
+    <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="9.5" letter-spacing="1">
+      <text x="18" y="24" fill="#94a3b8">CREW // AVATAR</text>
+      <rect x="206" y="17" width="6" height="6" fill="#22d3ee"/>
+      <line x1="18" y1="258" x2="222" y2="258" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+      <text x="120" y="274" text-anchor="middle" fill="#c4b5fd">SKIN PLACEHOLDER // CHANGE_ME</text>
+    </g>
+  </g>
+
+  <polygon points="16,4 224,4 236,16 236,274 224,286 16,286 4,274 4,16" fill="none" stroke="url(#mcBorder)" stroke-width="1.5"/>
+  <polyline points="4,34 4,16 16,4 36,4" fill="none" stroke="#22d3ee" stroke-width="2"/>
+  <polyline points="204,286 224,286 236,274 236,256" fill="none" stroke="#a020f0" stroke-width="2"/>
+</svg>

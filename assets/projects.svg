@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" role="img" aria-label="Featured GitHub projects for 1AbidD">
+  <defs>
+    <linearGradient id="prBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914"/>
+      <stop offset="100%" stop-color="#0e1227"/>
+    </linearGradient>
+    <linearGradient id="prBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a020f0" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="cardGlow" x="-8%" y="-15%" width="116%" height="130%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+
+  <polygon points="16,4 864,4 876,16 876,324 864,336 16,336 4,324 4,16" fill="url(#prBg)" stroke="url(#prBorder)" stroke-width="1.4"/>
+  <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <rect x="22" y="22" width="6" height="6" fill="#22d3ee"/>
+    <text x="36" y="29" font-size="12" font-weight="700" fill="#c4b5fd" letter-spacing="1.2">MISSION LOG // FEATURED REPOSITORIES</text>
+    <text x="858" y="29" text-anchor="end" font-size="10.5" fill="#94a3b8">SOURCE: RECENT</text>
+  </g>
+
+  <g>
+    <polygon points="32,54 416,54 428,66 428,164 416,176 32,176 20,164 20,66" fill="none" stroke="#a020f0" stroke-width="2.4" opacity="0.28" filter="url(#cardGlow)"/>
+    <polygon points="32,54 416,54 428,66 428,164 416,176 32,176 20,164 20,66" fill="#0a0f22" stroke="#7c3aed" stroke-width="1.35"/>
+    <polyline points="20,78 20,66 32,54 50,54" fill="none" stroke="#22d3ee" stroke-width="1.8"/>
+    <text x="38" y="88" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" font-weight="700" fill="#f8fafc">enki-</text>
+    <text x="38" y="118" font-family="'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#cbd5e1">AI LOCAL ( BLM JADI, kemungkinan ga dilanjut )</text>
+    <line x1="38" y1="138" x2="410" y2="138" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="44" cy="156" r="4.5" fill="#a855f7"/>
+    <text x="55" y="160" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Python</text>
+    <text x="410" y="160" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8">PUSHED 2026-10-21</text>
+  </g>
+  <g>
+    <polygon points="464,54 848,54 860,66 860,164 848,176 464,176 452,164 452,66" fill="none" stroke="#a020f0" stroke-width="2.4" opacity="0.28" filter="url(#cardGlow)"/>
+    <polygon points="464,54 848,54 860,66 860,164 848,176 464,176 452,164 452,66" fill="#0a0f22" stroke="#7c3aed" stroke-width="1.35"/>
+    <polyline points="452,78 452,66 464,54 482,54" fill="none" stroke="#22d3ee" stroke-width="1.8"/>
+    <text x="470" y="88" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" font-weight="700" fill="#f8fafc">APPS-KEUANGAN</text>
+    <line x1="470" y1="138" x2="842" y2="138" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="476" cy="156" r="4.5" fill="#22d3ee"/>
+    <text x="487" y="160" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Dart</text>
+    <text x="842" y="160" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8">PUSHED 2026-10-20</text>
+  </g>
+  <g>
+    <polygon points="32,196 416,196 428,208 428,306 416,318 32,318 20,306 20,208" fill="none" stroke="#a020f0" stroke-width="2.4" opacity="0.28" filter="url(#cardGlow)"/>
+    <polygon points="32,196 416,196 428,208 428,306 416,318 32,318 20,306 20,208" fill="#0a0f22" stroke="#7c3aed" stroke-width="1.35"/>
+    <polyline points="20,220 20,208 32,196 50,196" fill="none" stroke="#22d3ee" stroke-width="1.8"/>
+    <text x="38" y="230" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" font-weight="700" fill="#f8fafc">docker-coba2</text>
+    <line x1="38" y1="280" x2="410" y2="280" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="44" cy="298" r="4.5" fill="#a855f7"/>
+    <text x="55" y="302" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Python</text>
+    <text x="410" y="302" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8">PUSHED 2026-07-23</text>
+  </g>
+  <g>
+    <polygon points="464,196 848,196 860,208 860,306 848,318 464,318 452,306 452,208" fill="none" stroke="#a020f0" stroke-width="2.4" opacity="0.28" filter="url(#cardGlow)"/>
+    <polygon points="464,196 848,196 860,208 860,306 848,318 464,318 452,306 452,208" fill="#0a0f22" stroke="#7c3aed" stroke-width="1.35"/>
+    <polyline points="452,220 452,208 464,196 482,196" fill="none" stroke="#22d3ee" stroke-width="1.8"/>
+    <text x="470" y="230" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" font-weight="700" fill="#f8fafc">PROJEK_UMB_APKMOBILE-INVENTAR...</text>
+    <line x1="470" y1="280" x2="842" y2="280" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="476" cy="298" r="4.5" fill="#22d3ee"/>
+    <text x="487" y="302" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#e2e8f0">Dart</text>
+    <text x="842" y="302" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="10.5" fill="#94a3b8">PUSHED 2025-12-24</text>
+  </g>
+</svg>
