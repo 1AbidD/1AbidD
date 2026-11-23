@@ -2,12 +2,12 @@
   <defs>
     <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#7c3aed" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.95"/>
-      <stop offset="80%" stop-color="#a020f0" stop-opacity="0.8"/>
+      <stop offset="20%" stop-color="#7c3aed" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#a020f0" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#a020f0" stop-opacity="0"/>
     </linearGradient>
-    <filter id="beamGlow" x="-10%" y="-200%" width="120%" height="500%">
+    <filter id="beamGlow" x="-5%" y="-250%" width="110%" height="600%">
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -25,7 +25,7 @@
       .spark { animation: none; }
     }
   </style>
-  <line x1="20" y1="12" x2="860" y2="12" stroke="url(#beam)" stroke-width="2" filter="url(#beamGlow)"/>
+  <rect x="20" y="11" width="840" height="2" rx="1" fill="url(#beam)" filter="url(#beamGlow)"/>
   <polygon points="440,5 449,12 440,19 431,12" fill="#0b0f21" stroke="#c084fc" stroke-width="1.5"/>
   <rect x="438" y="10" width="4" height="4" fill="#22d3ee"/>
   <rect class="spark" x="328" y="10" width="4" height="4" fill="#e9d5ff"/>

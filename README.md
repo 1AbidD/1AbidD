@@ -9,17 +9,13 @@
 <table>
   <tr>
     <td width="260" align="center" valign="middle">
-      <img src="assets/mc-avatar.svg" width="240" height="290" alt="Floating Minecraft character avatar" />
+      <img src="assets/mc-avatar.svg?v=2" width="240" height="290" alt="Floating Minecraft character avatar" />
     </td>
     <td valign="middle">
       <h3>Halo, gua Abid (abdzki)</h3>
       <p>
         Mahasiswa Teknik Informatika yang lagi fokus ngulik Data Science dan Business Intelligence.
         Di GitHub ini isinya campuran project Python, aplikasi mobile Flutter, eksperimen AI lokal, sampai tugas kuliah yang sekalian gua rapihin.
-      </p>
-      <p>
-        Di luar layar kode, gua suka nulis cerita dan punya rencana panjang buat jadi writer-director.
-        Kalau lagi istirahat dari data dan deadline, biasanya mampir sebentar ke Minecraft.
       </p>
       <p>
         Terbuka buat ngobrol soal data, bikin aplikasi kecil-kecilan, atau kolaborasi kreatif.
@@ -72,7 +68,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" width="880" height="24" alt="" />
+  <img src="assets/divider.svg?v=2" width="880" height="24" alt="" />
 </p>
 
 <p align="center">
