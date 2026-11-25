@@ -32,7 +32,7 @@
   <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
     <rect x="34" y="24" width="6" height="6" fill="#a020f0"/>
     <text x="48" y="31" font-size="12" font-weight="700" fill="#c4b5fd" letter-spacing="1.2">TELEMETRY // LANGUAGE DISTRIBUTION</text>
-    <text x="846" y="31" text-anchor="end" font-size="10.5" fill="#94a3b8">6 PUBLIC REPOS (NO FORKS) | SYNC 2026-11-24</text>
+    <text x="846" y="31" text-anchor="end" font-size="10.5" fill="#94a3b8">6 PUBLIC REPOS (NO FORKS) | SYNC 2026-11-25</text>
     <line x1="34" y1="44" x2="846" y2="44" stroke="#312e81" stroke-width="1"/>
   </g>
 
